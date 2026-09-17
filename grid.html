@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid ke baare mai padha rhe hai</title>
+        <style>
+            .container{
+                outline:1px solid black;
+                display: grid;
+                width:100vw;
+                height:100vh;
+                grid-template-columns:1fr 1fr 1fr;
+                grid-template-rows:1fr 1fr 1fr;     
+            }
+            .container>div{
+                font-size:30px; 
+                outline: 2px dashed black;
+            }
+            #box1{
+                background-color:white;
+                grid-column-start:1;
+                grid-column-end:3;
+                grid-row-start:1;
+                grid-row-end:3;
+                z-index:1;
+            }
+            #box6{
+                background-color:red;
+                grid-column-start:2;
+                grid-column-end:3;
+                grid-row-start:2;
+                grid-row-end:3;
+                z-index:2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="box1">1</div>
+            <div id="box2">2</div>
+            <div id="box3">3</div>
+            <div id="box4">4</div>
+            <div id="box5">5</div>
+            <div id="box6">6</div>
+            <div id="box7">7</div>
+        </div>
+    </body>
+    </html>

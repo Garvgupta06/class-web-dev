@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .background{
+            background:linear-gradient(40deg, );
+            width:100vw;
+            height:100vh; 
+            display:grid;
+            justify-items:center;
+            align-items:center;
+            background:radial-gradient(gray,white ,black);
+            position:relative;
+        }
+        .box{
+            background:linear-gradient(to right,red 20%,orange 60%,white) ;
+            height:30px;
+            width:1000px;
+            position:absolute;
+
+        }
+        .door{
+            background:conic-gradient(white,gray,black 99%);
+            height:350px;
+            width:900px;
+            border-radius:45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class ="door"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

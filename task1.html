@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color:white;
+            text-align:center;
+            font-size:100px
+        }
+        .container{
+            position:relative;
+
+        }
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        .tiles{
+            width:100vw;
+            height:100vh;
+            scroll-behavior: smooth;
+            position:sticky;
+            top:0;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            left: 60px;
+        }
+        #heading{
+            background-color:red;
+        }
+        #wit{
+            background-color:blue;
+        }
+        #mt{
+            background-color:green;
+        }
+        #ct{
+            background-color:yellow;
+        }
+        .tiles img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.15);
+            object-fit: cover;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class = "tiles" id = "heading">MARVEL THEORIES</h2>
+        <div class="tiles" id="wit">
+            <img src = "D:\web dev\assests\what_if.jpg" alt = "WHAT IF LOGO" width = "1000px" height = "500px">
+        </div>
+        <div class="tiles" id="mt">
+            <h2>MOVIE THEORIES</h2>
+        </div>
+        <div class="tiles" id = "ct">
+            <h2>COMIC THEORIES</h2>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
