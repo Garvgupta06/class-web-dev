@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [1,2,3,4,5];
+        console.log(arr);
+        let nArr = arr.map((n)=> 
+        {
+            if(n%2 == 0)
+                return true; 
+            else{ 
+                return false;
+                }
+        }
+    );
+    console.log(nArr);
+    nnarr = arr.filter( n => n>3);
+    console.log(nnarr);
+    nnnarr = arr.find(n=> n>1);
+    console.log(nnnarr);
+    marr = arr.reduce((sum,n)=> sum += n, 0);
+    console.log(marr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

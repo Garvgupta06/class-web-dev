@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input id="min" type = "text">
+        <button type="submit" onclick="updateTimer()"
+        <span id="sec"></span>s
+    </p>
+    
+    <Script>
+        // Wap using setTimeout, setInterval and getElementById to create a timer for 15 mins
+        var minute = document.getElementByid("min").value
+        var totalsec= Number(minute)*60;
+        function updateTimer(){
+            let sec = totalsec%60;
+            let min =  parseInt(totalsec/60);
+            
+            document.getElementById("min").value    = min;
+            document.getElementById("sec").innerHTML= sec;
+        }
+        updateTimer();
+        setInterval(() => {totalsec-= 1; updateTimer();} ,1000)
+    </Script>
+</body>
+</html>
